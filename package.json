@@ -1,0 +1,56 @@
+{
+  "name": "frontend-starter",
+  "version": "1.0.0",
+  "description": "A quick starter project with all you need",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"./src/**/*.js\"",
+    "prepublishOnly": "eslint-find-rules --unused",
+    "test": "jest",
+    "test:ci": "jest --runInBand --ci"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tricinel/frontend-starter.git"
+  },
+  "keywords": [
+    "frontend",
+    "starter",
+    "config",
+    "frontwerk",
+    "javascript"
+  ],
+  "author": "Bogdan Lazar <bogdan@bogdanlazar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tricinel/frontend-starter/issues"
+  },
+  "homepage": "https://github.com/tricinel/frontend-starter",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-frontwerk": "^1.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.7",
+    "jest": "^24.9.0",
+    "jest-watch-typeahead": "^0.3.1",
+    "lint-staged": "^9.4.1",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.18.2"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}

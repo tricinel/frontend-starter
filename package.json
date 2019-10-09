@@ -10,11 +10,6 @@
     "test": "jest",
     "test:ci": "jest --runInBand --ci"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint"
-    ]
-  },
   "eslintIgnore": [
     "node_modules",
     "dist"

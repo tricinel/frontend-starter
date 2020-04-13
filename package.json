@@ -8,7 +8,8 @@
     "format": "prettier --write \"./src/**/*.js\"",
     "prepublishOnly": "eslint-find-rules --unused",
     "test": "jest",
-    "test:ci": "jest --runInBand --ci"
+    "test:ci": "jest --runInBand --ci",
+    "build": "babel src --out-dir dist"
   },
   "eslintIgnore": [
     "node_modules",
@@ -32,18 +33,21 @@
   },
   "homepage": "https://github.com/tricinel/frontend-starter",
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-frontwerk": "^1.0.1",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.17.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "husky": "^3.0.7",
-    "jest": "^24.9.0",
-    "jest-watch-typeahead": "^0.3.1",
-    "lint-staged": "^9.4.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "eslint": "^6.8.0",
+    "eslint-config-frontwerk": "^1.0.2",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "jest-watch-typeahead": "^0.5.0",
+    "lint-staged": "^10.1.3",
     "precise-commits": "^1.0.2",
-    "prettier": "^1.18.2"
+    "prettier": "^2.0.4"
   },
   "engines": {
     "node": ">= 6"
